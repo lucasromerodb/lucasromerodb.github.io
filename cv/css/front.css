@@ -19,6 +19,8 @@ body, html {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 /* MODULAR
@@ -36,15 +38,20 @@ h3 {
 }
 
 h4 {
+	padding-bottom: 15px;
 	font-size: 18px;
+	line-height: 22px;
 	text-transform: uppercase;
 	font-style: italic;
-	padding-bottom: 15px;
 }
 
 p {
 	font-size: 18px;
 	line-height: 25px;
+}
+
+strong {
+	font-weight: 700;
 }
 
 a,
@@ -102,7 +109,10 @@ nav {
 
 nav ul li {
 	float: left;
+	/*width: 20%;*/
 	width: 14.285714286%;
+	/*width: 16.666666667%;*/
+
 
 	margin-right: auto;
 	margin-left: auto;
@@ -190,15 +200,21 @@ nav a:hover {
 	padding-bottom: 80px;
 }
 
-.frontend div div {
+.frontend div div:first-child {
 	float: left;
 	width: 60%;
 	color: #fff;
 }
 
-.frontend img {
+.frontend .img-cont {
 	float: right;
+	width: 40%;
+}
+
+.frontend img {
 	padding-right: 30px;
+	width: 100%;
+	max-width: 350px;
 
 	-webkit-transition: all 0.8s ease 0s;
 	-moz-transition: all 0.8s ease 0s;
@@ -255,6 +271,7 @@ nav a:hover {
 	
 	text-align: center;
 	font-weight: 700;
+	font-size: 40px;
 }
 
 .interests div p {
@@ -283,7 +300,6 @@ nav a:hover {
 	color: #fff;
 	font-style: italic;
 	background-color: #e91e63;
-	font-size: 48px;
 }
 
 .branding {
@@ -296,7 +312,6 @@ nav a:hover {
 	color: #333;
 	font-style: italic;
 	background-color: #cddc39;
-	font-size: 48px;
 }
 
 .di {
@@ -309,7 +324,6 @@ nav a:hover {
 	color: #333;
 	font-style: italic;
 	background-color: #fff;
-	font-size: 48px;
 }
 
 .opensource {
@@ -322,7 +336,6 @@ nav a:hover {
 	color: #fff;
 	font-style: italic;
 	background-color: #009688;
-	font-size: 48px;
 }
 
 /* TEACH
@@ -344,16 +357,49 @@ nav a:hover {
 
 .teach p, .teach span {
 	color: #727272;
+	margin-bottom: 10px;
 }
 
 .teach span {
 	display: block;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 14px;
 }
 
 .teach img {
 	margin-top: 60px;
+}
+
+/* OTHERS
+-----------------------------------------*/
+
+.others {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: transparent url(../imgs/neutral.png) center top;
+}
+
+.others div > h4 {
+}
+.others div > p {
+	color: #727272;
+	font-size: 16px;
+}
+
+.others ul {
+	margin-top: 30px;
+}
+
+.others ul li {
+	color: #727272;
+	margin-bottom: 10px;
+	list-style-type: square;
+	margin-left: 16px;
+	
+}
+.others ul li strong {
+	color: #404040;
 }
 
 /* STICKY FOOTER
@@ -372,4 +418,102 @@ footer, .push {
 
 footer {
 	background-color: rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE
+-----------------------------------------*/
+
+@media screen and (max-width: 1020px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+	.studies {
+		padding-bottom: 60px;
+	}
+
+	.studies div:first-child {
+		padding-top: 100px;
+		width: 100%;
+	}
+
+	.studies h3,
+	.studies p {
+		text-align: center;
+	}
+
+	.dm {
+		width: 100% !important;
+		text-align: center;
+	}
+
+	.dm h3 {
+		font-size: 50px;
+		color: #e91e63;
+	}
+
+	.studies div:not(:first-child) {
+		width: 50%;
+	}
+
+	.interests div {
+		width: 50%;
+	}
+	
+
+	.frontend div div:first-child {
+		text-align: center;
+		width: 100%;
+	}
+
+	.frontend .img-cont {
+		float: left;
+		width: 100%;
+		margin-top: 50px;
+		
+	}
+
+	.frontend img {
+		display: block;
+		
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.me h4 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.studies div:not(:first-child) {
+		width: 100%;
+	}
+
+	.interests div {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	nav ul li {
+		width: 16.666666667%;;
+	}
+
+	.blog {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h2 {
+		font-size: 40px;
+	}
+
+	.frontend p {
+		font-size: 16px;
+	}
 }

@@ -23,6 +23,11 @@ body, html {
 
 /* MODULAR
 -----------------------------------------*/
+h2 {
+	font-size: 48px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
 
 h3 {
 	font-size: 30px;
@@ -120,6 +125,92 @@ nav a {
 
 nav a:hover {
 	color: #e91e63;
+}
+/* ESTUDIOS
+-----------------------------------------*/
+
+.formacion img {
+	display: block;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.formacion span {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+}
+
+.studies div {
+	float: left;
+	padding: 40px 15px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.studies div h3 {
+	padding-bottom: 20px;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.studies div:hover h3 {
+	color: #e91e63;
+}
+
+.studies div:first-child {
+	width: 15%;
+}
+
+.studies div:not(:first-child) {
+	width: 28.333333333%;
+}
+
+.studies div p span {
+	font-weight: 700;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* FRONTEND
+-----------------------------------------*/
+
+.frontend {
+	/*background-color: #333;*/
+	background: #333 url(../imgs/footer_lodyas.png) center top;
+	background-size: 500px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.frontend div div {
+	float: left;
+	width: 60%;
+	color: #fff;
+}
+
+.frontend img {
+	float: right;
+	
+}
+
+.frontend h2 {
+	color: #CD6870;
+}
+
+.frontend a {
+	color: #CD6870;
+}
+
+.front-sub {
+	opacity: 0.5;
+	font-weight: 300;
 }
 
 /* STICKY FOOTER

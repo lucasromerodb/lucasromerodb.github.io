@@ -25,6 +25,7 @@ body, html {
 
 /* MODULAR
 -----------------------------------------*/
+
 h2 {
 	font-size: 48px;
 	padding-bottom: 20px;
@@ -60,6 +61,7 @@ a:focus,
 a:visited {
 	text-decoration: none;
 	color: #000;
+	outline: none;
 }
 
 
@@ -72,6 +74,7 @@ header {
 .me	{
 	padding-top: 50px;
 }
+
 .me img {
 	display: block;
 	width: 150px;
@@ -89,7 +92,7 @@ header {
 }
 
 .me img:hover {
-	box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+	box-shadow: 0 5px 2px #e91e63;
 }
 
 .me div {
@@ -112,7 +115,6 @@ nav ul li {
 	/*width: 20%;*/
 	width: 14.285714286%;
 	/*width: 16.666666667%;*/
-
 
 	margin-right: auto;
 	margin-left: auto;
@@ -208,13 +210,8 @@ nav a:hover {
 
 .frontend .img-cont {
 	float: right;
-	width: 40%;
-}
-
-.frontend img {
-	padding-right: 30px;
-	width: 100%;
-	max-width: 350px;
+	width: 35%;
+	margin-right: 5%;
 
 	-webkit-transition: all 0.8s ease 0s;
 	-moz-transition: all 0.8s ease 0s;
@@ -222,8 +219,13 @@ nav a:hover {
 	transition: all 0.8s ease 0s;
 }
 
-.frontend:hover img {
-	padding-right: 0;
+.frontend img {
+	width: 100%;
+	max-width: 350px;
+}
+
+.frontend:hover .img-cont {
+	margin-right: 0;
 }
 
 .frontend h2 {
@@ -246,6 +248,8 @@ nav a:hover {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #404040;
+	color: #fff;
+	text-align: center;
 }
 
 /* INTERESTS
@@ -275,7 +279,6 @@ nav a:hover {
 }
 
 .interests div p {
-	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
@@ -402,10 +405,25 @@ nav a:hover {
 	color: #404040;
 }
 
+.others h3 {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #e91e63;
+}
+
+.others span {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+
 /* STICKY FOOTER
 -----------------------------------------*/
 
-.page {
+/*.page {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -415,16 +433,15 @@ nav a:hover {
 footer, .push {
 	height: 250px;
 }
-
-footer {
-	background-color: rgba(0,0,0,0.5);
-}
+*/
 
 /* RESPONSIVE
 -----------------------------------------*/
 
-@media screen and (max-width: 1020px) {
-	
+@media screen and (max-width: 960px) {
+	.interests div {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -456,11 +473,11 @@ footer {
 		width: 50%;
 	}
 
-	.interests div {
-		width: 50%;
+	.frontend {
+		background-attachment: scroll;
 	}
-	
 
+	
 	.frontend div div:first-child {
 		text-align: center;
 		width: 100%;
@@ -498,6 +515,11 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+	.me h3 {
+		padding: 0 40px;
+		font-size: 38px;
+	}
+
 	nav ul li {
 		width: 16.666666667%;;
 	}
@@ -511,6 +533,11 @@ footer {
 @media screen and (max-width: 320px) {
 	h2 {
 		font-size: 40px;
+	}
+
+	.me h3 {
+		padding: 0 15px;
+		font-size: 35px;
 	}
 
 	.frontend p {

@@ -452,6 +452,16 @@ header {
 	cursor: pointer;
 }
 
+.touch a {
+	display: block;
+	
+	margin-top: 60px;
+	margin-bottom: 30px;
+	color: #000 !important;
+	font-size: 10px !important;
+	opacity: 0.2;
+}
+
 /* STICKY FOOTER
 -----------------------------------------*/
 

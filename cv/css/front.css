@@ -401,7 +401,8 @@ nav a:hover {
 	margin-left: 16px;
 	
 }
-.others ul li strong {
+/*.others ul li strong,*/
+.others strong {
 	color: #404040;
 }
 

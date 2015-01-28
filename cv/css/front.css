@@ -247,9 +247,31 @@ nav a:hover {
 .cgartist {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #404040;
+	background-color: #000;
 	color: #fff;
 	text-align: center;
+	line-height: 25px;
+}
+
+.cgartist span {
+	opacity: 0.5;
+	font-size: 12px;
+}
+
+.cgartist a {
+	color: #e91e63;
+	font-size: 14px;
+	margin-right: 10px;
+	margin-left: 10px;
+
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.cgartist a:hover {
+	color: #009688;
 }
 
 /* INTERESTS

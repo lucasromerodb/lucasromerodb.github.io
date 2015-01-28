@@ -93,7 +93,7 @@ header {
 }
 
 .me img:hover {
-	box-shadow: 0 5px 2px #e91e63;
+	padding-top: 70px;
 }
 
 .me div {

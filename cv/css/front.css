@@ -416,6 +416,7 @@ header {
 .others div > p {
 	color: #727272;
 	font-size: 16px;
+	margin-bottom: 15px;
 }
 
 .others ul {

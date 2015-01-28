@@ -183,7 +183,8 @@ nav a:hover {
 
 .frontend {
 	/*background-color: #333;*/
-	background: #333 url(../imgs/footer_lodyas.png) center top;
+	background: #333 url(../imgs/footer_lodyas.png) center top fixed;
+	-webkit-background-size: 500px;
 	background-size: 500px;
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -197,7 +198,16 @@ nav a:hover {
 
 .frontend img {
 	float: right;
-	
+	padding-right: 30px;
+
+	-webkit-transition: all 0.8s ease 0s;
+	-moz-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+
+.frontend:hover img {
+	padding-right: 0;
 }
 
 .frontend h2 {
@@ -211,6 +221,139 @@ nav a:hover {
 .front-sub {
 	opacity: 0.5;
 	font-weight: 300;
+}
+
+/* CG ARTIST
+-----------------------------------------*/
+
+.cgartist {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #404040;
+}
+
+/* INTERESTS
+-----------------------------------------*/
+.interests div {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 350px;
+	padding: 100px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+.interests div span {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 10px; 
+	
+	text-align: center;
+	font-weight: 700;
+}
+
+.interests div p {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0.8);
+	
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.ux {
+	background: transparent url(../imgs/mapux.png) center top;
+	-webkit-background-size: 200px;
+	background-size: 200px;
+}
+
+.ux span {
+	color: #fff;
+	font-style: italic;
+	background-color: #e91e63;
+	font-size: 48px;
+}
+
+.branding {
+	background: transparent url(../imgs/branding.png) center top;
+	-webkit-background-size: 400px;
+	background-size: 400px;
+}
+
+.branding span {
+	color: #333;
+	font-style: italic;
+	background-color: #cddc39;
+	font-size: 48px;
+}
+
+.di {
+	background: transparent url(../imgs/wood.png) center top;
+	-webkit-background-size: 400px;
+	background-size: 400px;
+}
+
+.di span {
+	color: #333;
+	font-style: italic;
+	background-color: #fff;
+	font-size: 48px;
+}
+
+.opensource {
+	background: transparent url(../imgs/code.jpg) center top;
+	-webkit-background-size: 400px;
+	background-size: 400px;
+}
+
+.opensource span {
+	color: #fff;
+	font-style: italic;
+	background-color: #009688;
+	font-size: 48px;
+}
+
+/* TEACH
+-----------------------------------------*/
+
+.teach {
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.teach h2 {
+	color: #ff593d;
+}
+
+.teach h4 {
+	margin-bottom: 30px;
+}
+
+.teach p, .teach span {
+	color: #727272;
+}
+
+.teach span {
+	display: block;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.teach img {
+	margin-top: 60px;
 }
 
 /* STICKY FOOTER

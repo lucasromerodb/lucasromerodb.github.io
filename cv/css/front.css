@@ -311,7 +311,6 @@ header {
 	margin-left: auto;
 	padding: 10px;
 	
-	border-radius: 3px;
 	background-color: rgba(0,0,0,0.8);
 	
 	color: #fff;
@@ -430,7 +429,12 @@ header {
 	
 }
 .others strong {
-	color: #404040;
+	font-weight: 400;
+	color: #000;
+}
+
+.others a {
+	color: #e91e63;
 }
 
 .others h3 {

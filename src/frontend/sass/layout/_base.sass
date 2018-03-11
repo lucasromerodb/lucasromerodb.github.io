@@ -2,14 +2,24 @@ html, body
   background-color: $ne-95
   font-family: $ft-main
 
+body
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  background-attachment: fixed
+
+  +responsive(769, min)
+    background-image: url('../img/pattern/pattern2.png')
+
 .backtotop
   padding-top: 30px
   padding-bottom: 10px
 
 .l-base
   position: relative
-  margin-top: 30px
-  margin-bottom: 50px
+  padding-bottom: 20px
+  +responsive(769, min)
+    padding-top: 30px
 
   +responsive(1000)
     margin-top: 0

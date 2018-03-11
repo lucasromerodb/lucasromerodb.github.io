@@ -1,6 +1,10 @@
 .c-profile
   width: 270px
   background-color: $br-main
+  background-image: url('../img/pattern/pattern3.png')
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
   border-radius: 5px
   box-shadow: -5px 5px 10px transparentize($ne-base, 0.95)
   text-align: center
@@ -43,12 +47,9 @@
     margin: 0
     margin-top: 15px
     display: flex
-    // align-items: center
+    align-items: center
     justify-content: space-around
-    justify-content: center
     flex-direction: row
-
-    +responsive(768)
 
     li
       margin-right: 10px
@@ -60,3 +61,6 @@
     background-color: #fff
     padding-top: 10px
     padding-bottom: 15px
+
+    +responsive(768)
+      padding-top: 50px

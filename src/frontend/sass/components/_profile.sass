@@ -43,13 +43,18 @@
     margin: 0
     margin-top: 15px
     display: flex
-    align-items: center
+    // align-items: center
+    justify-content: space-around
     justify-content: center
+    flex-direction: row
+
+    +responsive(768)
 
     li
       margin-right: 10px
       margin-left: 10px
       font-size: 1.2em
+
 
   &__donation
     background-color: #fff

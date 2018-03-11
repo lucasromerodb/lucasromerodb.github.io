@@ -1,0 +1,25 @@
+.l-portfolio
+  width: 100%
+
+  // &_rounded
+  //   border-radius: 10px
+  //   overflow: hidden
+  //
+  // &_shadow
+  //   box-shadow: 0 10px 20px transparentize($ne-base, 0.9)
+
+  &__container
+    @extend %clearfix
+    width: 100%
+
+    .c-portfolio-item
+      width: calc(100% / 4)
+      float: left
+      transition: box-shadow 0.2s ease
+
+      &:hover
+        z-index: 2
+        box-shadow: 0 0 0 5px transparentize($br-main, 0)
+
+      &:nth-child(-n+3)
+        width: calc(100% / 3)

@@ -1,10 +1,12 @@
 .c-profile
-  position: fixed
   width: 270px
   background-color: $br-main
   border-radius: 5px
   box-shadow: -5px 5px 10px transparentize($ne-base, 0.95)
   text-align: center
+
+  +responsive(1024)
+    width: 100%
 
   &__photo
     display: flex
@@ -17,7 +19,7 @@
 
     img
       max-width: 80%
-      border-radius: 100px
+      border-radius: 200px
 
   &__body
     @extend %bbx

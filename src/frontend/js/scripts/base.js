@@ -7,8 +7,10 @@ function setBaseBodyWidth() {
       baseProfileWidth  = $('.l-base__profile').outerWidth();
 
 
-  $('.l-base__body').css({
-    'width': baseWidth - baseProfileWidth,
-    'left': baseProfileWidth
-  });
+  if ($(window).width() > 1024) {
+    $('.l-base__body').css({
+      'width': baseWidth - baseProfileWidth,
+      'left': baseProfileWidth
+    });
+  }
 }

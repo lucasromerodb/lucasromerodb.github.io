@@ -5,7 +5,7 @@
   box-shadow: -5px 5px 10px transparentize($ne-base, 0.95)
   text-align: center
 
-  +responsive(1024)
+  +responsive(1000)
     width: 100%
 
   &__photo
@@ -21,10 +21,12 @@
       max-width: 80%
       border-radius: 200px
 
+      +responsive(768)
+        max-width: 50%
+
   &__body
     @extend %bbx
     padding: 30px
-    // background-color: $br-main
 
   &__name
     margin: 0
@@ -48,3 +50,8 @@
       margin-right: 10px
       margin-left: 10px
       font-size: 1.2em
+
+  &__donation
+    background-color: #fff
+    padding-top: 10px
+    padding-bottom: 15px

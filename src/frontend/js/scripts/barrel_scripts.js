@@ -7,6 +7,7 @@ module.exports = function () {
   var script_modules_names = [
     'function_name.js',
     'base.js',
+    'share.js',
     'ready.js'
   ];
 

@@ -12,6 +12,7 @@ const Template = (args) => (
     {args.children}
   </Container>
 );
+
 export const RegularContainer = Template.bind({});
 RegularContainer.args = {
   hasPadding: true,

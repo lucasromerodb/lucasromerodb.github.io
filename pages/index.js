@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Text from "../components/Text/Text";
 
 export default function Home() {
   return (
@@ -20,8 +21,16 @@ export default function Home() {
             alt="Luke's face"
           />
         </picture>
-        <h1>Luke and Things</h1>
-        <p>Let’s talk about software development, 3D Art & video games.</p>
+        <p>
+          <Text size={32} weight={600} serif color="blue300">
+            Luke and Things
+          </Text>
+        </p>
+        <h1>
+          <Text size={48} weight={20} color="accent">
+            Let’s talk about software development, 3D Art & video games
+          </Text>
+        </h1>
       </header>
       <nav>
         <ul>
@@ -33,6 +42,9 @@ export default function Home() {
           </li>
           <li>
             <a href="#">Gaming</a>
+          </li>
+          <li>
+            <a href="#">About me</a>
           </li>
           <li>
             <a href="#">Twitter</a>
@@ -48,7 +60,11 @@ export default function Home() {
 
       <main>
         <section id="development">
-          <h2>Sometimes I wrote about software development</h2>
+          <h2>
+            <Text size={48} weight={400} serif>
+              Sometimes I write about software development
+            </Text>
+          </h2>
 
           <p>
             Programming is about setting up your mind with logic and creativity
@@ -93,10 +109,10 @@ export default function Home() {
             scrolling="no"
             title="Xbox Series S"
             src="https://codepen.io/lucasromerodb/embed/preview/zYBjPZv?height=726&theme-id=light&default-tab=result"
-            frameborder="no"
+            frameBorder="no"
             loading="lazy"
             allowtransparency="true"
-            allowfullscreen="true"
+            allowFullScreen
           >
             See the Pen{" "}
             <a href="https://codepen.io/lucasromerodb/pen/zYBjPZv">

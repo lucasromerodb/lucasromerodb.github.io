@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Playfair Display", serif;
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf")
+      format("truetype"),
+    url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Work Sans", sans-serif;
+  src: url("/public/fonts/Work_Sans/WorkSans-Light.ttf") format("truetype"),
+    url("/public/fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype"),
+    url("/public/fonts/Work_Sans/WorkSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./Container";
-// import "../../styles/globals.css";
 
 export default {
   title: "Container",

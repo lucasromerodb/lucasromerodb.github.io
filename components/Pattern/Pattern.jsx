@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Pattern = ({width = 100, height = 100, colorName = 'blue600'}) => 
-(<svg width={`${width}px`} height={`${height}px`}>
+{return (<svg width={`${width}px`} height={`${height}px`}>
     <defs>
         <pattern id="pattern" width="15" height="15" viewBox="0 0 30,30" patternUnits="userSpaceOnUse">
             <rect id="pattern-background" width="100%" height="100%" fill="rgba(0, 0, 0, 0)"/>
@@ -9,6 +9,6 @@ const Pattern = ({width = 100, height = 100, colorName = 'blue600'}) =>
         </pattern>
     </defs>
     <rect fill="url(#pattern)" height="100%" width="100%"/>
-</svg>)
+</svg>)}
 
 export default Pattern;

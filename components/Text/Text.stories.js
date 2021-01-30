@@ -1,6 +1,6 @@
 import React from "react";
 import Text from "./Text";
-import "../../styles/globals.css";
+// import "../../styles/globals.css";
 
 export default {
   title: "Text",

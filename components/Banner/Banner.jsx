@@ -29,7 +29,7 @@ const Banner = ({ children }) => {
   return (
     <Wrapper>
       <Box ref={boxRef}>
-        <Text size={48} weight={300} serif={false} colorName="blue600">
+        <Text size={48} weight={300} serif={false} colorName="blue600" as="h1">
           {children}
         </Text>
       </Box>

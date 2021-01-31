@@ -16,7 +16,7 @@ const Paragraph = ({ hasLine = true, children }) => {
   return (
     <>
       {hasLine && <Line />}
-      <Text size={20} lineHeight={1.9}>
+      <Text size={20} lineHeight={1.9} as="p">
         {children}
       </Text>
     </>

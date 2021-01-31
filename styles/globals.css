@@ -32,3 +32,13 @@ a {
   --sans: "Work Sans", sans-serif;
   --serif: "Playfair Display", serif;
 }
+
+::-moz-selection {
+  color: var(--accent);
+  background: var(--blue600);
+}
+
+::selection {
+  color: var(--accent);
+  background: var(--blue600);
+}

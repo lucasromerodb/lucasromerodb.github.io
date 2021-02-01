@@ -4,7 +4,15 @@ import DefaultText from "../Text/Text";
 import Link from "../Link/Link";
 
 const Box = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: ${({ height }) => `${height}px` || auto};
+
   padding: 32px;
+  padding-top: 80px;
 
   background-color: var(--blue500);
   border-radius: 6px;
@@ -12,15 +20,20 @@ const Box = styled.div`
   color: var(--white);
 
   &::before {
-    content: '"';
+    content: "“";
     display: block;
 
-    font-family: "Work Sans", sans-serif;
-    font-size: 60px;
+    position: absolute;
+    top: 10px;
+
+    font-family: "Work Sans";
+    font-size: 90px;
+    color: var(--blue300);
   }
 `;
 
 const Text = styled(DefaultText)`
+  height: 100%;
   margin-bottom: 32px;
 `;
 

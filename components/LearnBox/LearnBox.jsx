@@ -14,6 +14,7 @@ const Title = styled(Text)`
   display: block;
   margin-bottom: 25px;
 `;
+
 const Description = styled(Text)`
   display: block;
 `;

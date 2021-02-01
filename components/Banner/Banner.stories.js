@@ -7,8 +7,10 @@ export default {
   component: Banner,
 };
 
-export const Template = () => (
+export const BannerExample = () => (
   <Container>
-    <Banner>Let’s talk about software development, 3D Art & video games.</Banner>
+    <Banner>
+      Let’s talk about software development, 3D Art & video games.
+    </Banner>
   </Container>
 );

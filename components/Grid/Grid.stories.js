@@ -4,12 +4,11 @@ import Container from "../Container/Container";
 import LearnBox from "../LearnBox/LearnBox";
 
 export default {
-  title: "Grid",
+  title: "Components/Grid",
   component: Grid,
 };
 
-const imageURL =
-  "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png";
+const imageURL = "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png";
 
 const styles = {
   background: "silver",
@@ -40,26 +39,11 @@ const Template = (args) => (
           gridColumn: "9 / 13",
         }}
       />
-      <img
-        src={imageURL}
-        style={{ ...styles, height: "330px", gridColumn: "1 / 5" }}
-      />
-      <img
-        src={imageURL}
-        style={{ ...styles, height: "330px", gridColumn: "5 / 13" }}
-      />
-      <img
-        src={imageURL}
-        style={{ ...styles, height: "300px", gridColumn: "1 / 13" }}
-      />
-      <img
-        src={imageURL}
-        style={{ ...styles, height: "420px", gridColumn: "1 / 7" }}
-      />
-      <img
-        src={imageURL}
-        style={{ ...styles, height: "420px", gridColumn: "7 / 13" }}
-      />
+      <img src={imageURL} style={{ ...styles, height: "330px", gridColumn: "1 / 5" }} />
+      <img src={imageURL} style={{ ...styles, height: "330px", gridColumn: "5 / 13" }} />
+      <img src={imageURL} style={{ ...styles, height: "300px", gridColumn: "1 / 13" }} />
+      <img src={imageURL} style={{ ...styles, height: "420px", gridColumn: "1 / 7" }} />
+      <img src={imageURL} style={{ ...styles, height: "420px", gridColumn: "7 / 13" }} />
     </Grid>
   </Container>
 );

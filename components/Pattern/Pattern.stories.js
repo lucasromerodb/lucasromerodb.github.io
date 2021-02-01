@@ -2,7 +2,7 @@ import React from "react";
 import Pattern from "./Pattern";
 
 export default {
-  title: "Pattern",
+  title: "Components/Pattern",
   component: Pattern,
 };
 

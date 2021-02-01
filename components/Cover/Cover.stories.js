@@ -3,7 +3,7 @@ import Cover from "./Cover";
 import Container from "../Container/Container";
 
 export default {
-  title: "Cover",
+  title: "Components/Cover",
   component: Cover,
 };
 

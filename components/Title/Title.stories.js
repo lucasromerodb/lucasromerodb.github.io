@@ -3,7 +3,7 @@ import Title from "./Title";
 import Container from "../Container/Container";
 
 export default {
-  title: "Title",
+  title: "Composed/Title",
   component: Title,
 };
 

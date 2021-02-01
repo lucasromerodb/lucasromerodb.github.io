@@ -3,7 +3,7 @@ import LearnBox from "./LearnBox";
 import Container from "../Container/Container";
 
 export default {
-  title: "LearnBox",
+  title: "Components/LearnBox",
   component: LearnBox,
 };
 

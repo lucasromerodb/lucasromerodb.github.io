@@ -1,4 +1,4 @@
-import Document, { Html, Main, Head } from "next/document";
+import Document, { Html, Main, Head, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
@@ -7,9 +7,7 @@ class MyDocument extends Document {
     const sheet = new ServerStyleSheet();
 
     // Step 2: Retrieve styles from components in the page
-    const page = renderPage((App) => (props) =>
-      sheet.collectStyles(<App {...props} />)
-    );
+    const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />));
 
     // Step 3: Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();
@@ -18,15 +16,16 @@ class MyDocument extends Document {
     return { ...page, styleTags };
   }
 
-  Render() {
+  render() {
     return (
       <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="/fonts/fonts.css" type="text/css" />
+          <link rel="stylesheet" href="/fonts/fonts.css" />
           {this.props.styleTags}
         </Head>
         <body>
           <Main />
+          <NextScript />
         </body>
       </Html>
     );

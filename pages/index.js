@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <header>
+        <img src="/images/icon_bolt.png" />
         <picture>
           <source
             srcSet="https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-19/s150x150/139004984_226464955739615_8861671548734737197_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_ohc=TrOLscUKLnQAX-Ujcai&tp=1&oh=8e6213a82c1dac1dd0a9ca117ff358c2&oe=603E4104"
@@ -62,7 +63,7 @@ export default function Home() {
         <section id="development">
           <h2>
             <Text size={48} weight={400} serif>
-              Sometimes I write about software development
+              Sometimes I write about software development ""
             </Text>
           </h2>
 

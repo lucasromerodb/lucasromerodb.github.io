@@ -1,4 +1,4 @@
-import Document, { Html, Main, Head, NextScript } from "next/document";
+import Document, { Html, Main, Head } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
@@ -22,25 +22,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="/fonts/fonts.css" />
-          <link
-            rel="preload"
-            href="/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/public/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          {/* Step 5: Output the styles in the head  */}
+          <link rel="stylesheet" href="/fonts/fonts.css" type="text/css" />
           {this.props.styleTags}
         </Head>
         <body>
           <Main />
-          <NextScript />
         </body>
       </Html>
     );

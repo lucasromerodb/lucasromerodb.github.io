@@ -22,7 +22,7 @@ const Description = styled(Text)`
 const LearnBox = ({
   href,
   title,
-  titleTag,
+  heading,
   description,
   background,
   colorTitle,
@@ -32,7 +32,7 @@ const LearnBox = ({
   return (
     <a href={href}>
       <Box background={background} hasShadow={hasShadow}>
-        <Title size={20} colorName={colorTitle} as={titleTag}>
+        <Title size={20} colorName={colorTitle} as={heading}>
           {title}
         </Title>
         <Description size={18} colorName={colorDescription} as="p">

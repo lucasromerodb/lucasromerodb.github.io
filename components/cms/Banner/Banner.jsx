@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import Text from "../Text/Text";
-import Pattern from "../Pattern/Pattern";
+import Text from "../../Text/Text";
+import Pattern from "../../Pattern/Pattern";
+import DefaultContainer from "../../Container/Container";
 
-const Wrapper = styled.div`
+const Container = styled(DefaultContainer)`
   position: relative;
 
   display: flex;
@@ -27,14 +28,14 @@ const Banner = ({ children }) => {
   }, [useRef]);
 
   return (
-    <Wrapper>
+    <Container>
       <Box ref={boxRef}>
         <Text size={48} weight={300} serif={false} colorName="blue600" as="h1">
           {children}
         </Text>
       </Box>
       <Pattern width={240} height={patternHeight} />
-    </Wrapper>
+    </Container>
   );
 };
 

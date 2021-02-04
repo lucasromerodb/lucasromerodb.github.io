@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "./Banner";
-import Container from "../Container/Container";
+import Container from "../../Container/Container";
 
 export default {
-  title: "Composed/Banner",
+  title: "CMS/Banner",
   component: Banner,
 };
 

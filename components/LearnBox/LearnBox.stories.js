@@ -17,7 +17,7 @@ export const LearnBoxDark = Template.bind({});
 LearnBoxDark.args = {
   href: "https://google.com",
   title: "Styled Components",
-  titleTag: "h1",
+  heading: "h1",
   description: "Learn visual primitives for the component age",
   background: "blue700",
   colorTitle: "accent",
@@ -28,7 +28,7 @@ export const LearnBoxRegular = Template.bind({});
 LearnBoxRegular.args = {
   href: "https://google.com",
   title: "Styled Components",
-  titleTag: "h1",
+  heading: "h1",
   description: "Learn visual primitives for the component age",
   background: "blue600",
   colorTitle: "accent",
@@ -39,7 +39,7 @@ export const LearnBoxLight = Template.bind({});
 LearnBoxLight.args = {
   href: "https://google.com",
   title: "Styled Components",
-  titleTag: "h1",
+  heading: "h1",
   description: "Learn visual primitives for the component age",
   background: "white",
   colorTitle: "blue500",

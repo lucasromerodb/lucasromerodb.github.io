@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import Container from "../Container/Container";
+import Container from "../../Container/Container";
 
 export default {
   title: "Composed/Title",

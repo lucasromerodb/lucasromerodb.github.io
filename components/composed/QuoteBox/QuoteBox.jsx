@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import DefaultText from "../Text/Text";
-import Link from "../Link/Link";
+import DefaultText from "../../Text/Text";
+import Link from "../../Link/Link";
 
 const Box = styled.div`
   position: relative;

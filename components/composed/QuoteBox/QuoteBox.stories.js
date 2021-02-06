@@ -1,6 +1,6 @@
 import React from "react";
 import QuoteBox from "./QuoteBox";
-import Container from "../Container/Container";
+import Container from "../../Container/Container";
 
 export default {
   title: "Composed/QuoteBox",

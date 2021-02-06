@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import DefaultText from "../Text/Text";
+import DefaultText from "../../Text/Text";
 
 const Text = styled(DefaultText)`
   display: block;

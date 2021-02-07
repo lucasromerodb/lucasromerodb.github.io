@@ -32,10 +32,15 @@ const LearnBox = ({
   return (
     <a href={href}>
       <Box background={background} hasShadow={hasShadow}>
-        <Title size={20} colorName={colorTitle} as={heading}>
+        <Title size={20} colorName={colorTitle} as={heading} weight={600}>
           {title}
         </Title>
-        <Description size={18} colorName={colorDescription} as="p">
+        <Description
+          size={16}
+          lineHeight={1.18}
+          colorName={colorDescription}
+          as="p"
+        >
           {description}
         </Description>
       </Box>

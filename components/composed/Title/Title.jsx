@@ -4,21 +4,21 @@ import DefaultText from "../../Text/Text";
 
 const Text = styled(DefaultText)`
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 70%;
 `;
 
-const Title = ({ as = "h1", imageSrc, imageAlt = "Title icon", children }) => {
+const Title = ({ as = "h1", icon, children }) => {
   return (
     <>
       <img
-        src={imageSrc}
-        alt={imageAlt}
+        src={icon.fallback}
+        alt={icon.alt}
         width={32}
         height={32}
         aria-hidden="true"
       />
-      <Text size={48} serif as={as}>
+      <Text size={48} serif as={as} lineHeight={1.32}>
         {children}
       </Text>
     </>

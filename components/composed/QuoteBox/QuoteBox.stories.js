@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => (
   <Container hasPadding>
-    <QuoteBox {...args}>
+    <QuoteBox fields={args}>
       Video games are part of my culture, I really enjoy playing new, retro and
       indie games. Playing it with friends makes me happy, that's why{" "}
       <strong>I want sharing my passion with you</strong>.
@@ -19,6 +19,9 @@ const Template = (args) => (
 
 export const QuoteBoxExample = Template.bind({});
 QuoteBoxExample.args = {
-  href: "https://google.com/",
-  linkText: "Follow my gaming account on Instagram and let’s play",
+  text: "",
+  link: {
+    href: "https://google.com/",
+    text: "Follow my gaming account on Instagram and let’s play",
+  },
 };

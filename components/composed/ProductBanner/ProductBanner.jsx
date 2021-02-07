@@ -8,6 +8,7 @@ const Box = styled.div`
   flex-direction: row;
 
   padding: 40px;
+  margin-top: 20px;
 
   background-color: var(--white);
   border-radius: 6px;
@@ -31,7 +32,7 @@ const Img = styled.img`
 
   background-image: red;
 
-  margin-left: 60px;
+  margin-left: 100px;
   border-radius: 20px;
 `;
 

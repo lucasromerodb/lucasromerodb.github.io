@@ -16,7 +16,9 @@ const Template = (args) => (
 export const TitleExample = Template.bind({});
 TitleExample.args = {
   as: "h1",
-  imageSrc:
-    "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/209/books_1f4da.png",
-  imageAlt: "This is the best title icon",
+  icon: {
+    fallback:
+      "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/209/books_1f4da.png",
+    alt: "This is the best title icon",
+  },
 };

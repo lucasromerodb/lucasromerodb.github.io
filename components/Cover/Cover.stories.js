@@ -15,6 +15,6 @@ const Template = (args) => (
 
 export const CoverExample = Template.bind({});
 CoverExample.args = {
-  imageSrc: "https://wallpaperaccess.com/full/370969.jpg",
-  imagealt: "Ghibli field",
+  fallback: "https://wallpaperaccess.com/full/370969.jpg",
+  alt: "Ghibli field",
 };

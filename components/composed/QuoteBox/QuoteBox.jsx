@@ -9,7 +9,10 @@ const Box = styled.div`
   flex-direction: column;
 
   width: 100%;
-  height: ${({ height }) => `${height}px` || auto};
+  height: auto;
+
+  height: 450px;
+  grid-column: 8 / 13;
 
   padding: 32px;
   padding-top: 80px;
@@ -37,13 +40,13 @@ const Text = styled(DefaultText)`
   margin-bottom: 32px;
 `;
 
-const QuoteBox = ({ href, linkText, children }) => {
+const QuoteBox = ({ fields, styles = {}, children }) => {
   return (
-    <Box>
+    <Box styles={styles}>
       <Text colorName="white" lineHeight={1.5} as="p">
-        {children}
+        {fields.text} {children}
       </Text>
-      <Link href={href}>{linkText}</Link>
+      <Link href={fields.link.href}>{fields.link.text}</Link>
     </Box>
   );
 };

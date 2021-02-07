@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import DefaultContainer from "../../Container/Container";
 import Text from "../../Text/Text";
 import Link from "../../Link/Link";
 
-const Container = styled(DefaultContainer)`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -70,7 +69,7 @@ const links = [
 ];
 
 const Navigation = ({ fields }) => (
-  <Container hasPadding>
+  <Wrapper>
     <Picture>
       <source srcSet={fields.picture.fallback} />
       <img src={fields.picture.fallback} alt={fields.picture.alt} />
@@ -89,7 +88,7 @@ const Navigation = ({ fields }) => (
         </ul>
       </Nav>
     </RightWrapper>
-  </Container>
+  </Wrapper>
 );
 
 export default Navigation;

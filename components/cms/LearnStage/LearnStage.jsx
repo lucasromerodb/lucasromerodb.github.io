@@ -21,8 +21,8 @@ const Ol = styled.ol`
 const LearnStage = ({ fields }) => {
   return (
     <>
-      <Text size={24} as={fields.heading}>
-        {fields.title}
+      <Text size={24} as={fields.title.heading}>
+        {fields.title.text}
       </Text>
       <Ol>
         {fields.courses.map((item) => (

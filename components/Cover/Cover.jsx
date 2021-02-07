@@ -34,10 +34,10 @@ const Img = styled.img`
   filter: grayscale(100);
 `;
 
-const Cover = ({ imageSrc, imageAlt = "Section separator" }) => {
+const Cover = ({ fallback, alt = "" }) => {
   return (
     <Wrapper>
-      <Img src={imageSrc} alt={imageAlt} width="100%" height={450} />
+      <Img src={fallback} alt={alt} width="100%" height={450} />
       <Overlay />
       <AbsolutePattern>
         <Pattern width={35} height={35} colorName="white" />

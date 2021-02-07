@@ -3,8 +3,10 @@ import LearnStage from "./LearnStage";
 import Container from "../../Container/Container";
 
 const fields = {
-  title: "1) Start with structures, styles and actions",
-  heading: "h3",
+  title: {
+    heading: "h3",
+    text: "1) Start with structures, styles and actions",
+  },
   courses: [
     {
       href: "https://google.com",

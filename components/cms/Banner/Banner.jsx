@@ -4,11 +4,14 @@ import Text from "../../Text/Text";
 import Pattern from "../../Pattern/Pattern";
 import DefaultContainer from "../../Container/Container";
 
-const Container = styled(DefaultContainer)`
+const Wrapper = styled.div`
   position: relative;
 
   display: flex;
   flex-direction: row;
+
+  margin-top: 50px;
+  margin-bottom: 70px;
 `;
 
 const Box = styled.div`
@@ -28,14 +31,14 @@ const Banner = ({ children }) => {
   }, [useRef]);
 
   return (
-    <Container>
+    <Wrapper>
       <Box ref={boxRef}>
         <Text size={48} weight={300} serif={false} colorName="blue600" as="h1">
           {children}
         </Text>
       </Box>
       <Pattern width={240} height={patternHeight} />
-    </Container>
+    </Wrapper>
   );
 };
 

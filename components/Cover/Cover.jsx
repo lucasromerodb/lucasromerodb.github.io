@@ -7,8 +7,10 @@ const Wrapper = styled.div`
   width: 100%;
   height: 450px;
 
-  border-radius: 6px;
+  margin-top: 200px;
+  margin-bottom: 50px;
 
+  border-radius: 6px;
   overflow: hidden;
 `;
 

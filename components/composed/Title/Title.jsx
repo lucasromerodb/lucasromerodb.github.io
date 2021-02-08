@@ -5,7 +5,8 @@ import DefaultText from "../../Text/Text";
 const Text = styled(DefaultText)`
   display: block;
   margin-top: 10px;
-  max-width: 70%;
+  margin-bottom: 30px;
+  max-width: 73%;
 `;
 
 const Title = ({ as = "h1", icon, children }) => {

@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 `;
 
 const Line = styled.div`

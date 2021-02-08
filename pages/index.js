@@ -210,50 +210,43 @@ const fields = {
     },
     images: [
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/studio-ghibli-blender.jpg",
         alt: "Image example",
-        height: "540px",
-        gridColumn: "1 / 9",
+        height: "500px",
+        gridColumn: "1 / 8",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/mabel-gravity-falls.jpg",
         alt: "Image example",
-        height: "540px",
-        gridColumn: "9 / 13",
+        height: "500px",
+        gridColumn: "8 / 13",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/studio-ghibli-trees.jpg",
         alt: "Image example",
-        height: "330px",
+        height: "300px",
         gridColumn: "1 / 5",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/sea-of-thieves-powder-barrel.jpg",
         alt: "Image example",
-        height: "330px",
+        height: "300px",
         gridColumn: "5 / 13",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/node-editor-grass-shader.jpg",
         alt: "Image example",
-        height: "300px",
+        height: "270px",
         gridColumn: "1 / 13",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/retro-game-room-mario-bros-making-off.jpg",
         alt: "Image example",
         height: "420px",
         gridColumn: "1 / 7",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/retro-game-room-mario-bros.jpg",
         alt: "Image example",
         height: "420px",
         gridColumn: "7 / 13",
@@ -282,29 +275,25 @@ const fields = {
     },
     images: [
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/xbox-series-s-controller.jpg",
         alt: "Image example",
         height: "450px",
         gridColumn: "1 / 8",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/smash-bross-party.jpg",
         alt: "Image example",
         height: "140px",
         gridColumn: "1 / 4",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/nintendo-switch-picada.jpg",
         alt: "Image example",
         height: "140px",
         gridColumn: "4 / 8",
       },
       {
-        fallback:
-          "https://github.com/lucasromerodb/ghibli-wind-example/raw/main/render.png",
+        fallback: "/images/overcooked-party.jpg",
         alt: "Image example",
         height: "140px",
         gridColumn: "8 / 13",

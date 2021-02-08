@@ -4,7 +4,7 @@ import DefaultText from "../../Text/Text";
 import LearnBox from "../../LearnBox/LearnBox";
 
 const Text = styled(DefaultText)`
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 `;
 

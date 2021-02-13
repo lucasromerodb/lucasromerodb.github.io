@@ -14,6 +14,7 @@ import ProductBanner from "../components/composed/ProductBanner/ProductBanner";
 import LearnStage from "../components/cms/LearnStage/LearnStage";
 import LearnSeparator from "../components/LearnSeparator/LearnSeparator";
 import Credits from "../components/cms/Credits/Credits";
+import ArticleList from "../components/cms/ArticleList/ArticleList";
 
 const fields = {
   navigation: {
@@ -46,6 +47,47 @@ const fields = {
       text:
         "Programming is about setting up your mind with logic and creativity ways to identify patterns and solve true problems with code. That's what I do every day and I love it. Let me share some of my experience with you.",
     },
+    articles: [
+      {
+        heading: "h3",
+        href:
+          "https://dev.to/lucasromerodb/te-voy-a-recomendar-una-forma-practica-de-documentar-tu-proyecto-de-software-37f3",
+        image: {
+          fallback:
+            "https://res.cloudinary.com/practicaldev/image/fetch/s--s5AlSHbO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tlmlixcnbs3h2u712bjt.jpg",
+          alt: "Description",
+        },
+        title: "A practice way to document your software development project",
+        date: "July 2020",
+        lang: "Spanish",
+      },
+      {
+        heading: "h3",
+        href:
+          "https://dev.to/lucasromerodb/te-voy-a-recomendar-una-forma-practica-de-documentar-tu-proyecto-de-software-37f3",
+        image: {
+          fallback:
+            "https://res.cloudinary.com/practicaldev/image/fetch/s--s5AlSHbO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tlmlixcnbs3h2u712bjt.jpg",
+          alt: "Description",
+        },
+        title: "A practice way to document your software development project",
+        date: "July 2020",
+        lang: "Spanish",
+      },
+      {
+        heading: "h3",
+        href:
+          "https://dev.to/lucasromerodb/te-voy-a-recomendar-una-forma-practica-de-documentar-tu-proyecto-de-software-37f3",
+        image: {
+          fallback:
+            "https://res.cloudinary.com/practicaldev/image/fetch/s--s5AlSHbO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tlmlixcnbs3h2u712bjt.jpg",
+          alt: "Description",
+        },
+        title: "A practice way to document your software development project",
+        date: "July 2020",
+        lang: "Spanish",
+      },
+    ],
   },
   xbox: {},
   mentoring: {
@@ -339,27 +381,8 @@ export default function Home() {
             </Paragraph>
 
             <div id="posts">
-              <article>
-                <div>
-                  <h3>
-                    <a href="#">A practice way to document your software development project</a>
-                  </h3>
-                  <footer>Writted on DEV.to - June 2020</footer>
-                </div>
-                <div>
-                  <picture>
-                    <source
-                      srcSet="https://res.cloudinary.com/practicaldev/image/fetch/s--1VqHqso6--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/ene9dycsywj8y3zd285l.jpg"
-                      alt="TODO: description"
-                    />
-                    <img
-                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--1VqHqso6--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/ene9dycsywj8y3zd285l.jpg"
-                      alt="TODO: description"
-                    />
-                  </picture>
-                  <a href="#">»</a>
-                </div>
-              </article>
+              <ArticleList fields={fields.development.articles} />
+
               <a href="#">View all my posts on DEV.to</a>
             </div>
           </Container>

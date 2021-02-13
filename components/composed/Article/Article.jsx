@@ -3,7 +3,7 @@ import styled from "styled-components";
 import DefaultContainer from "../../Container/Container";
 import DefaultText from "../../Text/Text";
 
-const Container = styled(DefaultContainer)`
+const Wrapper = styled.article`
   display: flex;
   flex-direction: row;
 
@@ -17,7 +17,7 @@ const Container = styled(DefaultContainer)`
 
   img {
     object-fit: cover;
-    margin-right: 70px;
+    margin-right: 60px;
     border-radius: 6px;
   }
 
@@ -33,7 +33,7 @@ const Paragraph = styled(DefaultText)``;
 
 const Article = ({ fields }) => {
   return (
-    <Container hasPadding>
+    <Wrapper hasPadding>
       <img
         src={fields.image.fallback}
         alt={fields.image.alt}
@@ -49,7 +49,7 @@ const Article = ({ fields }) => {
           {fields.date} - Written in {fields.lang}
         </Paragraph>
       </div>
-    </Container>
+    </Wrapper>
   );
 };
 

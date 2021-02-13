@@ -13,6 +13,7 @@ import ImageWall, { IMG } from "../components/composed/ImageWall/ImageWall";
 import ProductBanner from "../components/composed/ProductBanner/ProductBanner";
 import LearnStage from "../components/cms/LearnStage/LearnStage";
 import LearnSeparator from "../components/LearnSeparator/LearnSeparator";
+import Credits from "../components/cms/Credits/Credits";
 
 const fields = {
   navigation: {
@@ -145,7 +146,7 @@ const fields = {
       {
         title: {
           heading: "h3",
-          text: "3) Next steps",
+          text: "3) Keep growing",
         },
         courses: [
           {
@@ -284,13 +285,13 @@ const fields = {
         fallback: "/images/smash-bross-party.jpg",
         alt: "Image example",
         height: "140px",
-        gridColumn: "1 / 4",
+        gridColumn: "1 / 5",
       },
       {
         fallback: "/images/nintendo-switch-picada.jpg",
         alt: "Image example",
         height: "140px",
-        gridColumn: "4 / 8",
+        gridColumn: "5 / 8",
       },
       {
         fallback: "/images/overcooked-party.jpg",
@@ -308,6 +309,9 @@ const fields = {
         alt: "Arroba Channel",
       },
     },
+  },
+  credits: {
+    text: "Thanks to all those who make me grow every day 💖",
   },
 };
 
@@ -329,9 +333,7 @@ export default function Home() {
       <main>
         <section id="development">
           <Container hasPadding>
-            <Title {...fields.development.title}>
-              {fields.development.title.title}
-            </Title>
+            <Title {...fields.development.title}>{fields.development.title.title}</Title>
             <Paragraph {...fields.development.paragraph}>
               {fields.development.paragraph.text}
             </Paragraph>
@@ -340,10 +342,7 @@ export default function Home() {
               <article>
                 <div>
                   <h3>
-                    <a href="#">
-                      A practice way to document your software development
-                      project
-                    </a>
+                    <a href="#">A practice way to document your software development project</a>
                   </h3>
                   <footer>Writted on DEV.to - June 2020</footer>
                 </div>
@@ -381,10 +380,7 @@ export default function Home() {
               allowtransparency="true"
               allowFullScreen
             >
-              See the Pen{" "}
-              <a href="https://codepen.io/lucasromerodb/pen/zYBjPZv">
-                Xbox Series S
-              </a>{" "}
+              See the Pen <a href="https://codepen.io/lucasromerodb/pen/zYBjPZv">Xbox Series S</a>{" "}
               by Lucas Romero Di Benedetto (
               <a href="https://codepen.io/lucasromerodb">@lucasromerodb</a>) on{" "}
               <a href="https://codepen.io">CodePen</a>.
@@ -398,20 +394,14 @@ export default function Home() {
             <Cover {...fields.mentoring.cover} />
           </Container>
           <Container hasPadding>
-            <Title {...fields.mentoring.title}>
-              {fields.mentoring.title.title}
-            </Title>
-            <Paragraph {...fields.mentoring.paragraph}>
-              {fields.mentoring.paragraph.text}
-            </Paragraph>
+            <Title {...fields.mentoring.title}>{fields.mentoring.title.title}</Title>
+            <Paragraph {...fields.mentoring.paragraph}>{fields.mentoring.paragraph.text}</Paragraph>
             <article>
               <LearnStage fields={fields.mentoring.roadmap[0]} />
             </article>
             <article>
               <LearnStage fields={fields.mentoring.roadmap[1]} />
-              <LearnSeparator>
-                You could be employable at six months!
-              </LearnSeparator>
+              <LearnSeparator>You could be employable at six months!</LearnSeparator>
             </article>
             <article>
               <LearnStage fields={fields.mentoring.roadmap[2]} />
@@ -425,18 +415,12 @@ export default function Home() {
           </Container>
           <Container hasPadding>
             <Title {...fields.art.title}>{fields.art.title.title}</Title>
-            <Paragraph {...fields.art.paragraph}>
-              {fields.art.paragraph.text}
-            </Paragraph>
+            <Paragraph {...fields.art.paragraph}>{fields.art.paragraph.text}</Paragraph>
             <ImageWall fields={fields.art.images} />
             <Paragraph {...fields.art.paragraph} hasLine={false}>
               {fields.art.footer.text}
             </Paragraph>
-            <Link
-              href={fields.art.social.href}
-              weight={600}
-              colorName="blue500"
-            >
+            <Link href={fields.art.social.href} weight={600} colorName="blue500">
               {fields.art.social.text}
             </Link>
           </Container>
@@ -449,9 +433,9 @@ export default function Home() {
               <IMG fields={fields.gaming.images[0]} />
               <QuoteBox fields={fields.gaming.quote}>
                 {fields.gaming.quote.text}
-                Video games are part of my culture, I really enjoy playing new,
-                retro and indie games. Playing it with friends makes me happy,
-                that's why <strong>I want sharing my passion with you</strong>.
+                Video games are part of my culture, I really enjoy playing new, retro and indie
+                games. Playing it with friends makes me happy, that's why{" "}
+                <strong>I want sharing my passion with you</strong>.
               </QuoteBox>
               <IMG fields={fields.gaming.images[1]} />
               <IMG fields={fields.gaming.images[2]} />
@@ -463,6 +447,7 @@ export default function Home() {
       </main>
 
       <footer>
+        <Credits>{fields.credits.text}</Credits>
         <h2>About me</h2>
         <p>Upcoming description...</p>
       </footer>

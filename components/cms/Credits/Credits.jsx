@@ -9,17 +9,21 @@ const Container = styled(DefaultContainer)`
   justify-content: center;
   flex-direction: row;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   background-color: var(--white);
+
+  cite {
+    font-style: normal;
+  }
 `;
 
 const Credits = ({ children }) => {
   return (
     <Container hasPadding>
       <Text serif size={16} colorName="blue700" as="cite">
-        {children} 💖
+        {children}
       </Text>
     </Container>
   );

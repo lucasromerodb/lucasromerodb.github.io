@@ -46,3 +46,7 @@ img {
   color: var(--accent);
   background: var(--blue600);
 }
+
+main > section {
+  padding-top: 20px;
+}

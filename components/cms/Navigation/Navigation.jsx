@@ -72,7 +72,7 @@ const Navigation = ({ fields }) => (
   <Wrapper>
     <Picture>
       <source srcSet={fields.picture.fallback} />
-      <img src={fields.picture.fallback} alt={fields.picture.alt} />
+      <img src={fields.picture.fallback} alt={fields.picture.alt} loading="eager" />
     </Picture>
     <RightWrapper>
       <Text size={36} weight={600} serif color="blue300" as="p">

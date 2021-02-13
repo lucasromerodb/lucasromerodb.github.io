@@ -20,6 +20,7 @@ export const IMG = ({ fields }) => (
     }}
   >
     <img
+      loading="lazy"
       src={fields.fallback}
       alt={fields.alt}
       style={{
